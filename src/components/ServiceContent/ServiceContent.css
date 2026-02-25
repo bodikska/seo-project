@@ -1,0 +1,41 @@
+.service-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1315px;
+    margin: 0 auto;
+}
+.text {
+    max-width: 390px;
+    margin-top: 60px;
+}
+.text h3 {
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.text, .image {
+    width: 49%;
+}
+.image img {
+    display: block;
+    width: 712px;
+    height: 404px;
+}
+.image {
+    margin-top: 60px;
+}
+.list {
+margin: 0;
+padding-left: 20px;
+list-style-image:url("/public/images/tabServices/Mark.png");
+}
+.list li {
+    font-size: 14px;
+    color:#424551 ;
+    margin-bottom: 12px;
+    text-align: left;
+    padding-left: 10px;
+}
+.actions {
+    margin-top: 45px;
+}

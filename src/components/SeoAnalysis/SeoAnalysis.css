@@ -1,0 +1,203 @@
+/* ===== SECTION BACKGROUND ===== */
+.containbg {
+  width: 100%;
+  background: #1e212c;
+  padding: 80px 0;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.analysis {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ===== ILLUSTRATION ===== */
+.analysis img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+}
+
+/* ===== RIGHT BLOCK ===== */
+.formanalysis {
+  width: 100%;
+}
+
+.formanalysis h2 {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 32px;
+}
+
+/* ===== FORM GRID ===== */
+.formanalysis form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px;
+}
+
+/* ===== LABEL DEFAULT ===== */
+.formanalysis label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+
+  min-width: 0;
+}
+
+/* ===== INPUTS ===== */
+.formanalysis input {
+  box-sizing: border-box;
+}
+
+.formanalysis input[type="text"],
+.formanalysis input[type="email"] {
+  width: 100%;
+  height: 44px;
+
+  border-radius: 6px;
+  padding: 0 16px;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+  font-size: 16px;
+
+  transition: 0.2s ease;
+}
+
+.formanalysis input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formanalysis input[type="text"]:focus,
+.formanalysis input[type="email"]:focus {
+  border-color: rgba(108, 99, 255, 0.8);
+  box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.2);
+}
+
+/* URL INPUT = full row */
+.formanalysis label:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+/* ===== BOTTOM ROW (checkbox + submit) ===== */
+.formanalysis .formBottom {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* checkbox + text always on same line */
+.formanalysis label.agree {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  column-gap: 12px;
+  align-items: start;
+
+  max-width: 420px;
+  margin: 0;
+
+  cursor: pointer;
+}
+
+/* checkbox */
+.formanalysis .agreeInput {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  accent-color: #6c63ff;
+  cursor: pointer;
+}
+
+/* checkbox text */
+.formanalysis .agreeText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* submit button */
+.formanalysis .submitBtn {
+  flex: 0 0 auto;
+
+  height: 52px;
+  min-width: 260px;
+  padding: 0 44px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #6c63ff;
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.formanalysis .submitBtn:hover {
+  filter: brightness(0.95);
+}
+
+.formanalysis .submitBtn:active {
+  transform: scale(0.99);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .analysis {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis img {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .formanalysis h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .formanalysis form {
+    grid-template-columns: 1fr;
+  }
+
+  .formanalysis .formBottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .formanalysis label.agree {
+    max-width: 100%;
+  }
+
+  .formanalysis .submitBtn {
+    width: 100%;
+  }
+}

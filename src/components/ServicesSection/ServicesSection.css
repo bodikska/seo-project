@@ -1,0 +1,31 @@
+.services {
+    max-height: 700px;
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+.services h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.tabs {
+    max-width: 1230px;
+    height: 46px;
+    margin-bottom: 60px;
+    display: flex;
+    margin: 0 auto;
+}
+.tabs button {
+    font-size: 16px;
+    width: 246px;
+    margin: 0;
+    height: 46px;
+    color:#9A9CA5;
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+}
+.tabs .active {
+    border: 1px solid #7772F1;
+    color:#7772F1;
+}

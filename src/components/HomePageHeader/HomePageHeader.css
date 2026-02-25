@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.HeaderHomePage {
+    max-width: 1920px ;
+    height: 1020px;
+    background-image:url('/public/images/homeheader/homebackground.png') ;
+}
+.header-color-text {
+    color: #7772F1;
+}
+.title-text {
+    color:white;
+    font-size: 64px;
+}
+.title {
+    width: 810px;
+    text-align: left;
+    padding-top: 200px;
+   
+}
+.header-title {
+    max-width: 1230px;
+     display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.header-title  img {
+ padding-top: 200px;
+}
+.nav-button {
+    display: flex;
+    padding-top: 60px;
+}
+.nav-button span:first-child{
+    display: block;
+    color:white;
+    width: 220px;
+    height: 52px;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 52px;
+    margin-right: 25px;
+    transition: 0.5s;
+}
+.nav-button span:first-child:hover{
+    transition: 0.5s;
+    border:1px solid #7772F1;
+    color:#7772F1;
+}
+.nav-button span:nth-child(2){
+    display: flex;
+    width: 220px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+
+}
+.play-icon {
+  display: inline-block;
+  width: 84px;
+  height: 84px;
+  background-image: url('/public/images/homeheader/btnplay.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.play-icon:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.play-icon:hover + .title-text-btn {
+    transition: 0.5s;
+  color: #7772F1;
+}
+
+.title-text-btn{
+    transition: 0.5s;
+    color:white;
+}
+.core-services {
+    display: flex;
+    max-width: 1230px;
+    height: 40px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+.core-services div{
+     height: 40px;
+  width: 410px;
+  display: flex;              
+  align-items: center;        
+  /* justify-content: left;     */
+  color: white;
+  font-size: 20px;
+ 
+}
+.core-services div:nth-child(2) {
+   justify-content: center;   
+}
+.core-services div:nth-child(3) {
+   justify-content: center;   
+}
+.core-services div:first-child i{
+    display: inline-block;  
+    background-image: url('/public/images/homeheader/ic-chart.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.core-services div:nth-child(2) i{
+    display: inline-block;  
+    background-image: url('/public/images/homeheader/ic-computer.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.core-services div:nth-child(3) i{
+    display: inline-block;  
+    background-image: url('/public/images/homeheader/ic-speaker.png');
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.core-services div:not(:first-child) {
+  border-left: 1px solid grey;
+}

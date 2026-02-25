@@ -1,0 +1,36 @@
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 44px;
+  padding: 0 25px;
+
+  border-radius: 4px;
+  text-decoration: none;
+
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+
+  border: 0;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+  margin-right: 25px;
+  
+}
+
+.primary-btn:hover {
+  filter: brightness(0.92);
+  box-shadow:1px 0.5px 0.5px 0.5px grey;
+}
+
+.primary-btn:active {
+  transform: scale(0.99);
+}
+
+.primary-btn:focus-visible {
+  outline: 3px solid rgba(108, 99, 255, 0.25);
+  outline-offset: 3px;
+}
